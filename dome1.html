@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>拼图游戏-只能向空白处稳动的实例</title>
+<script src="PinTu1.0.js"></script>
+<style>
+*{ padding:0px; margin:0px;}
+#pintu{ width:100%; max-width:400px; min-width:300px; margin:0 auto; background:#C90; overflow:hidden;}
+</style>
+</head>
+
+<body>
+<div id="pintu"></div>
+<script>
+//实例化对象
+pt = new PinTu();
+pt.endFn = function(){
+	alert("恭喜您，"+this.stepNum+"步完成拼图！");	
+};
+</script>
+</body>
+</html>
